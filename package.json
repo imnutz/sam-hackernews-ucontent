@@ -1,0 +1,24 @@
+{
+  "name": "sam-hackernews-uhtml",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "sam-pattern": "^1.4.8",
+    "ucontent": "^2.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "node-fetch": "^2.6.1",
+    "rollup": "^2.26.11"
+  }
+}
