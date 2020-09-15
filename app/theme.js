@@ -1,10 +1,6 @@
-import path from 'path'
-import {readFileSync} from 'fs';
-import { css } from 'ucontent';
-import { html } from 'ucontent'
+import { html } from 'ucontent';
 import { timeAgo, host } from './utils.js'
 
-const style = css(readFileSync(path.resolve('styles/style.css')));
 
 const header = (appName, data) => {
   const menuKeys = Object.keys(data)
@@ -55,7 +51,7 @@ const renderPosts = (posts = []) => {
   `
 }
 
-export default (state) => {
+export default (state, style) => {
   return html`
     <!DOCTYPE html>
     <html lang="en">
@@ -68,13 +64,7 @@ export default (state) => {
     <body>
       <div class="app">
         ${header(state.appName, state.header)}
-        ${
-          state.fetching ?
-            html`
-              <div class="loading"><span>fetching...</span></div>
-            ` :
-            renderPosts(state.stories)
-        }
+        ${renderPosts(state.stories)}
       </div>
     </body>
     </html>
