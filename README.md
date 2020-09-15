@@ -1,16 +1,13 @@
-# sam-hackernews-uhtml
+# sam-hackernews-ucontent
 
-[SAM Pattern](https://www.npmjs.com/package/sam-pattern) + [uhtml](https://github.com/WebReflection/uhtml)
+[SAM Pattern](https://www.npmjs.com/package/sam-pattern) + [ucontent](https://github.com/WebReflection/ucontent) for SSR
 
 ## Usage
 ```
 $ yarn install
 
-$ yarn build
-
-$ http-server
+$ node app/server.js
 ```
-More information for [http-server](https://www.npmjs.com/package/http-server)
 
 ## License
 WTFPL
